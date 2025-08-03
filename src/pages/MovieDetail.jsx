@@ -52,4 +52,4 @@ const MovieDetail = () => {
     )
 }
 
-export default MovieDetails
+export default MovieDetail
