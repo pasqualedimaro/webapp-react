@@ -2,14 +2,16 @@ import { NavLink } from "react-router-dom"
 
 const Header = () => {
     return (
-        <nav className="bg-warning py-3 mb-4">
-            <div className="container d-flex justify-content-between align-items-center">
-                <div>logo</div>
-                <ul className="d-flex list-unstyled m-0 gap-2">
-                    <li>
-                        <NavLink to='/'>Home Page</NavLink>
+        <nav className="navbar navbar-expand-lg navbar-custom py-3 mb-4">
+            <div className="container">
+                <div className="navbar-brand">logo</div>
+                <ul className="navbar-nav">
+                    <li className="nav-item">
+                        <NavLink to='/' className="nav-link">Home Page</NavLink>
                     </li>
-                    <li><NavLink to='/movies'>Movies</NavLink></li>
+                    <li className="nav-item">
+                        <NavLink to='/movies' className="nav-link">Movies</NavLink>
+                    </li>
                 </ul>
             </div>
         </nav>

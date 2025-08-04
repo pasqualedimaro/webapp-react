@@ -1,8 +1,15 @@
-
 function StarRating({ media_voti }) {
-
     const maxValue = 5;
-    return [...Array(maxValue)].map((_, i) => <i key={i} className={`fa-star fa-${i < media_voti ? 'solid' : 'regular'}`}></i>)
+    return (
+        <div className="star-rating">
+            {[...Array(maxValue)].map((_, i) => (
+                <i
+                    key={i}
+                    className={`fa-star ${i < media_voti ? 'fas' : 'far'}`}
+                ></i>
+            ))}
+        </div>
+    )
 }
 
 export default StarRating
