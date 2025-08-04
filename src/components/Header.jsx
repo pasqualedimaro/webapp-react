@@ -1,10 +1,12 @@
-import { NavLink } from "react-router-dom"
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-custom py-3 mb-4">
             <div className="container">
-                <div className="navbar-brand">logo</div>
+                <div className="navbar-brand">
+                    <i className="fas fa-film logo-icon"></i>
+                </div>
                 <ul className="navbar-nav">
                     <li className="nav-item">
                         <NavLink to='/' className="nav-link">Home Page</NavLink>
@@ -18,4 +20,4 @@ const Header = () => {
     )
 }
 
-export default Header
+export default Header;

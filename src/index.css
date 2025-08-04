@@ -17,3 +17,12 @@
 .navbar-custom .nav-link.active {
     background-color: rgba(0, 0, 0, 0.2);
 }
+
+.logo-icon {
+    font-size: 2rem;
+    vertical-align: middle;
+}
+
+.logo-icon:hover {
+    transform: rotate(-15deg) scale(1.2);
+}
