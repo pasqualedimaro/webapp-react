@@ -11,7 +11,7 @@ const Home = () => {
                     <p className="lead mb-5">
                         La piattaforma per scoprire, esplorare e recensire i migliori film
                     </p>
-                    <Link to="/movies" className="btn btn-primary btn-lg px-4">
+                    <Link to="/movies" className="btn btn-lg px-4">
                         Esplora i film
                     </Link>
                 </div>

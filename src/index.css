@@ -26,3 +26,7 @@
 .logo-icon:hover {
     transform: rotate(-15deg) scale(1.2);
 }
+
+.btn {
+    background-color: #f78000;
+}

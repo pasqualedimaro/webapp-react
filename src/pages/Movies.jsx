@@ -41,7 +41,7 @@ function Movies() {
                             <input type="text" onChange={(e) => setResarc(e.target.value)} className="form-control" placeholder="ricerca" />
                         </div>
                         <div className="col-auto">
-                            <button type="submit" className="btn btn-primary mb-3">ricerca</button>
+                            <button type="submit" className="btn mb-3">ricerca</button>
                         </div>
                     </form>
                 </div>
