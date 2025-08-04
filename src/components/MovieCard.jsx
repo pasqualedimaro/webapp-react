@@ -18,7 +18,7 @@ const MovieCard = ({ data }) => {
                 <p className="card-text">{abstract}</p>
                 <StarRating media_voti={media_voti} />
                 {/* <p className="card-text"><StarComponent/></p> */}
-                <Link to={`/movie/${id}`} className="btn btn-primary">Dettaglio</Link>
+                <Link to={`/movie/${id}`} className="btn">Dettaglio</Link>
             </div>
         </div>
     )
