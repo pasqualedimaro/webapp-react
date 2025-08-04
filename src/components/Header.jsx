@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 const Header = () => {
     return (
-        <nav className="navbar navbar-expand-lg navbar-custom py-3 mb-4">
+        <nav className="navbar navbar-expand-lg navbar-custom py-3">
             <div className="container">
                 <div className="navbar-brand">
                     <i className="fas fa-film logo-icon"></i>
