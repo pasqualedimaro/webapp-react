@@ -10,7 +10,7 @@ const DefaultLayout = () => {
             <main>
                 <Outlet />
             </main>
-            <footer>sono il footer</footer>
+            <footer>2025 Cinevoto</footer>
         </>
     )
 }
