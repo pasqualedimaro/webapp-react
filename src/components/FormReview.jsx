@@ -1,10 +1,8 @@
-import { useParams } from "react-router-dom"
 import axios from "axios"
-import { useEffect, useState } from "react"
-
+import { useState, useContext } from "react"
+import globalContext from "../context/globalContext"
 
 function FormReview({ id, reload }) {
-
     const defaultReview = {
         'name': '',
         'vote': 1,
@@ -12,6 +10,7 @@ function FormReview({ id, reload }) {
     }
 
     const [review, setReview] = useState(defaultReview)
+    const { showLoader, hideLoader } = useContext(globalContext)
 
     function newForm(e) {
         const value = e.target.value;
@@ -20,24 +19,23 @@ function FormReview({ id, reload }) {
         }))
     }
 
-    // console.log(id)
-
     function sendReview(e) {
         e.preventDefault();
+        showLoader()
 
         axios.post(`http://127.0.0.1:3000/api/movies/${id}/reviews`, {
             ...review,
             vote: parseInt(review.vote)
         })
             .then(res => {
-                // console.log(res.data);
                 setReview(defaultReview);
                 reload();
             })
             .catch(err => console.log(err))
-
+            .finally(() => {
+                hideLoader()
+            })
     }
-
 
     return (
         <>
@@ -90,7 +88,6 @@ function FormReview({ id, reload }) {
             </form>
         </>
     )
-
 }
 
 export default FormReview
